@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Cincinnati4kDrone from '../img/Cincinnati4KDrone.mp4';
-import { Player } from 'video-react';
+
 
 class Home extends Component{
     render() {

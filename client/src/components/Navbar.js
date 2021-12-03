@@ -13,8 +13,8 @@ const Navbar = () => {
     <div className="container-fluid nav-top-sub w-100">
       <div className="nav-contact-contain w-100">
         <ul className="nav-contact-sub w-100">
-          <li><Link className="nav-links nav-contact-links bi bi-envelope" to="_"> 1-800-555-1234</Link></li>
-          <li><Link className="nav-links bi bi-phone nav-contact-links" to="_"> info@CincinnatiDestination.com</Link></li>
+          <li className="nav-links nav-contact-links bi bi-envelope" to="_"> 1-800-555-1234</li>
+          <li  className="nav-links bi bi-phone nav-contact-links" to="_"> info@CincinnatiDestination.com</li>
         </ul>
       </div>
       <div className="nav-social-contain">
@@ -44,6 +44,7 @@ const Navbar = () => {
           <Dropdown.Item className="nav-drop-sub" href="#/action-1">Events</Dropdown.Item>
           <Dropdown.Item className="nav-drop-sub" href="#/action-2">Food &Drinks</Dropdown.Item>
           <Dropdown.Item className="nav-drop-sub" href="#/action-3">Entertainment</Dropdown.Item>
+          <Dropdown.Item className="nav-drop-sub" href="/contact">Contact</Dropdown.Item>
           </DropdownButton></li>
           {/* <li><Link className="nav-links nav-main-links" to="/WhereToGo">Where To Go</Link></li> */}
           <li><Link className="nav-links nav-main-links" to="/LodgAndTran">Lodging & Transportation</Link></li>
