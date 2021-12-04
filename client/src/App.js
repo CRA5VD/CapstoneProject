@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
 import { BrowserRouter, Route } from "react-router-dom"
 import './index.css';
-import Home from './components/Home';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import WhereToGo from './components/WhereToGo';
+import Home from './components/Home'
+import Entertainment from './components/Entertainment';
 import LodgAndTran from './components/LodgAndTran';
+import FoodAnDrinks from './components/FoodAnDrinks';
+import Events from './components/Events';
 
 
 
@@ -16,8 +18,12 @@ class App extends Component {
         <Navbar />
 
           <Route exact path='/' component={ Home }/>
-          <Route  path='/about' component={ WhereToGo }/>
-          <Route  path='/contact' component={ LodgAndTran }/>
+          <Route  path='/FoodAnDrinks' component={ FoodAnDrinks }/>
+          <Route  path='/Events' component={ Events }/>
+          <Route  path='/Entertainment' component={ Entertainment }/>
+          <Route  path='/LodgAndTran' component={ LodgAndTran }/>
+          {/* <Route  path='/About' component={ About }/>
+          <Route  path='/Contact' component={ Contact }/> */}
 
 
         <Footer />

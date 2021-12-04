@@ -6,39 +6,38 @@ import BWlogo from '../img/BWlogo.png';
 
 const Footer = () => {
   return (
-<footer class="page-footer footer-contain">
-      <div class="container-fluid footer-main-contain w-100">
-        <div class="row footer-main-sub">
+<footer className="page-footer footer-contain">
+      <div className="container-fluid footer-main-contain w-100">
+        <div className="row footer-main-sub">
           <div className="row footer-social-main">
             <div className="col-3 footer-social-sub center">
               <ul className="footer-social-sub">
-              <li><Link className="nav-links footer-social-bott-links bi bi-twitter" to="_"></Link></li>
-              <li><Link className="nav-links footer-social-bott-links bi bi-facebook" to="_"></Link></li>
-              <li><Link className="nav-links footer-social-bott-links bi bi-instagram" to="_"></Link></li>
-              <li><Link className="nav-links footer-social-bott-links bi bi-youtube" to="_"></Link></li>
+              <li><a className="nav-links footer-social-bott-links bi bi-twitter"></a></li>
+              <li><a className="nav-links footer-social-bott-links bi bi-facebook"></a></li>
+              <li><a className="nav-links footer-social-bott-links bi bi-instagram"></a></li>
+              <li><a className="nav-links footer-social-bott-links bi bi-youtube"></a></li>
               </ul>
             </div>
           
-              <div class="col-5 footer-logo-contain">
-                <a href="/" className="footer-a-logo">
+              <div className="col-5 footer-logo-contain">
+                <Link href="/" className="footer-a-logo">
                   <img className="footer-img-logo" src={BWlogo} alt="Logo" />
-                </a>
+                </Link>
               </div>
-              <div class="col-1 footer-links-contain1 left">
-                {/* <h5 class="white-text">Links</h5> */}
+              <div className="col-1 footer-links-contain1 left">
+                {/* <h5 className="white-text">Link</h5> */}
                 <ul className="footer-links-ul">
-                  <li><a class="footer-main-links" href="#!">Home</a></li>
-                  <li><a class="footer-main-links" href="#!">Contact</a></li>
-                  <li><a class="footer-main-links" href="#!">About</a></li>
+                  <li><Link className="footer-main-links" href="/">Home</Link></li>
+                  <li><Link className="footer-main-links" href="/Contact">Contact</Link></li>
+                  <li><Link className="footer-main-links" href="/About">About</Link></li>
                 </ul>
               </div>
-              <div class="col-3 footer-links-contain2">
+              <div className="col-3 footer-links-contain2">
                 <ul className="footer-links-ul">
-                  <li><a class="footer-main-links" href="#!">Events</a></li>
-                  <li><a class="footer-main-links" href="#!">Food & Drinks</a></li>
-                  <li><a class="footer-main-links" href="#!">Entertainment</a></li>
-                  <li><a class="footer-main-links" href="#!">Lodging & Transportation</a></li>
-                  <li><a class="footer-main-links" href="#!"></a></li>
+                  <li><Link className="footer-main-links" href="/Events">Events</Link></li>
+                  <li><Link className="footer-main-links" href="/FoodAnDrinks">Food & Drinks</Link></li>
+                  <li><Link className="footer-main-links" href="/Entertainment">Entertainment</Link></li>
+                  <li><Link className="footer-main-links" href="/LodgAndTran">Lodging & Transportation</Link></li>
                 </ul>
               </div>
             </div>
@@ -46,10 +45,8 @@ const Footer = () => {
         </div>  
 
           {/* Bottom Footer */}
-      <div class="container-fluid footer-bott-contain w-100">
-        <div class="row footer-bott-sub">
-          <div class="footer-copyright col-12">© 2014 Copyright Cincinnati Destination</div>
-        </div>
+      <div className="container-fluid footer-bott-contain w-100">
+        <p className="footer-bott-sub">2021 Copyright Cincinnati Destination</p>
       </div> 
   </footer>
 

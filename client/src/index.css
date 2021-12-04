@@ -55,13 +55,13 @@ code {
 }
 
 .nav-social-contain{
-
+  float: right !important;
+  text-align: right !important;
 }
 
 .nav-social-links{
   font-size: 30px;
-  float: right !important;
-  text-align: right !important;
+
 }
 
 
@@ -148,6 +148,7 @@ code {
   height:450px !important;
   padding: 0 !important;
   margin: 0 !important;
+
 }
 
 .video-container-sub {
@@ -164,6 +165,30 @@ left:0;
   width:100%;
 }
 
+/* Banner */
+
+.banner-container{
+  position: relative;
+  top: 0;
+  height:450px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+
+}
+
+.banner-container-sub {
+z-index: -100;
+width:100%;
+height:100%;
+overflow:hidden;
+position:absolute;
+top:0;
+left:0;
+}
+
+#banner-bg{
+  width:100%;
+}
 
 
 /* Main Footer */
@@ -171,8 +196,6 @@ left:0;
 .footer-main-contain{
   margin: 0 !important;
   padding: 0 !important;
-  
-
 }
 
 .footer-contain{
@@ -180,9 +203,8 @@ left:0;
  height: 200px !important;
  width: 100%;
  margin: 0;
- bottom: 30px !important;
+bottom: 0 !important;
  position:absolute;
-
 }
 
 .footer-main-sub{
@@ -193,8 +215,10 @@ left:0;
 .footer-img-logo{
   height: 140px;
   width: auto;
-  justify-content: right;
+  justify-content: right !important;
   display: flex;
+  align-content: right;
+  
 }
 
 .footer-a-logo{
@@ -212,6 +236,15 @@ left:0;
   font-weight: bolder !important;
   color: #0000E0;
   text-decoration: none;
+}
+
+.footer-links-contain1{
+  margin-bottom: 20px !important;
+}
+
+
+.footer-links-contain2{
+  padding-bottom: 50px !important;
 }
 
 .footer-social-sub{
@@ -237,25 +270,30 @@ left:0;
 /* Bottom Footer */
 
 
-.footer-bott-sub{
-  width: 100%;
-  height: 30px !important;
-}
-
 .footer-bott-contain{
   background-color: black !important;
   width: 100%;
-  margin: 0;
-  bottom: -30 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  bottom: 0 !important;
   position:absolute;
   text-align: center;
   margin: auto;
 }
 
-
-.footer-copyright{
-
-  text-align: center;
-  margin: auto;
+.footer-bott-text{
+  font-family: 'Comfortaa', Arial, Helvetica, sans-serif 
 }
 
+
+/* media */
+
+/* .video-container{
+  position: relative;
+  top: 0;
+  height:450px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background-size: 125%;
+  background-position: 40% 0;
+} */

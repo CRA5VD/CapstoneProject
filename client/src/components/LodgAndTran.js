@@ -1,13 +1,25 @@
-import React from 'react'
+import React, { Component } from 'react';
+import bannerPic from '../img/CincinnatiLandscape.jpg'
 
-const LodgAndTrans = () => {
-    return (
-        <div className='lodg-and-trans'>
-            <h4 className="center">Lodging & Transportation</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quaerat asperiores quo consequuntur nemo quam impedit labore accusantium commodi, aliquam, corporis magnam, corrupti in ducimus illum nam! Eos, nisi temporibus.</p>
-            
+
+class LodgAndTran extends Component{
+    render() {
+      return (
+      <div className="main-contain">
+        <div className="banner-contain">
+          <div className="banner-sub">
+          <img className="banner-bg" src={bannerPic} alt="Logo" />
+          </div>
         </div>
-    )
+          <div className='post card'>
+            <div className="card-content">
+              <h2>Lodging & Transportation</h2>
+              <p>Insert</p>
+            </div>
+          </div>
+      </div>
+      )
+    }    
 }
 
-export default (LodgAndTrans)
+export default (LodgAndTran)
