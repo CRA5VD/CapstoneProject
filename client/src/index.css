@@ -31,7 +31,9 @@ code {
   padding-left: 80px;
 }
 
-/* Navbar Top*/
+
+/* -------- Navbar Top -------- */
+
 
 .nav-top-contain{
   background-color: rgba(0, 0, 0, 0.815);
@@ -65,7 +67,8 @@ code {
 }
 
 
-/* Navbar main */
+/* -------- Navbar main -------- */
+
 
 .nav-main-contain{
   background-color: rgba(0, 0, 0, 0.5);
@@ -140,7 +143,9 @@ code {
 
 }
 
+
 /* Navbar Video // For Home */
+
 
 .video-container{
   position: relative;
@@ -165,7 +170,9 @@ left:0;
   width:100%;
 }
 
-/* Banner */
+
+/* -------- Banner -------- */
+
 
 .banner-container{
   position: relative;
@@ -191,7 +198,62 @@ left:0;
 }
 
 
-/* Main Footer */
+/* -------- Home -------- */
+
+.home-photo-collage{
+  width: 100%;
+  align-content: center;
+  margin:auto;
+}
+.home-sub-collage{
+  align-content: center;
+  margin:auto;
+}
+
+#widgetIframe{
+  width:300px;
+  height:600px;
+}
+
+#widgetWeather{
+  width:300px;
+  height:auto;
+}
+
+
+
+/* -------- Events -------- */
+
+
+
+
+/* -------- Food & Drinks -------- */
+
+
+
+
+/* -------- Entertainment -------- */
+
+
+
+
+/* -------- Lodging and Transportation -------- */
+
+
+
+
+/* -------- Contact -------- */
+
+
+
+
+/* -------- About -------- */
+
+
+
+
+
+/* -------- Main Footer -------- */
 
 .footer-main-contain{
   margin: 0 !important;
@@ -267,7 +329,7 @@ bottom: 0 !important;
 }
 
 
-/* Bottom Footer */
+/*  --------  Bottom Footer  --------  */
 
 
 .footer-bott-contain{
@@ -286,7 +348,7 @@ bottom: 0 !important;
 }
 
 
-/* media */
+/* -------- media  -------- */
 
 /* .video-container{
   position: relative;
