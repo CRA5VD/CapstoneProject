@@ -8,7 +8,7 @@ const Footer = () => {
   return (
 <footer className="page-footer footer-contain">
       <div className="container-fluid footer-main-contain w-100">
-        <div className="row footer-main-sub">
+        <div className="footer-main-sub">
           <div className="row footer-social-main">
             <div className="col-3 footer-social-sub center">
               <ul className="footer-social-sub">
@@ -25,7 +25,6 @@ const Footer = () => {
                 </Link>
               </div>
               <div className="col-1 footer-links-contain1 left">
-                {/* <h5 className="white-text">Link</h5> */}
                 <ul className="footer-links-ul">
                   <li><Link className="footer-main-links" href="/">Home</Link></li>
                   <li><Link className="footer-main-links" href="/Contact">Contact</Link></li>
