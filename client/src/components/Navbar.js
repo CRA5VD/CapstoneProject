@@ -33,7 +33,7 @@ const Navbar = () => {
       <nav className="nav-wrapper  nav-main-contain">
         <div className="container-fluid nav-main-sub">
           <div className="nav-main-logo">
-            <Link href="_" className="brand-logo">
+            <Link to="/" className="brand-logo">
               <img className="main-logo" src={BWlogo} alt="Logo" />
             </Link>
           </div>
@@ -46,8 +46,8 @@ const Navbar = () => {
                 <Dropdown.Item className="nav-drop-sub" href="/Entertainment">Entertainment</Dropdown.Item>
               </DropdownButton></li>
               <li><Link className="nav-links nav-main-links" to="/LodgAndTran">Lodging & Transportation</Link></li>
-              <li><Link className="nav-links nav-main-links" href="/Contact">Contact</Link></li>
-              <li><Link className="nav-links nav-main-links" href="/About">About</Link></li>
+              <li><Link className="nav-links nav-main-links" to="/Contact">Contact</Link></li>
+              <li><Link className="nav-links nav-main-links" to="/About">About</Link></li>
             </ul>
           </div>
         </div>
