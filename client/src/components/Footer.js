@@ -34,7 +34,7 @@ const Footer = () => {
               <div className="col-3 footer-links-contain2">
                 <ul className="footer-links-ul">
                   <li><Link className="footer-main-links" to="/Events">Events</Link></li>
-                  <li><Link className="footer-main-links" to="/FoodAnDrinks">Food & Drinks</Link></li>
+                  <li><Link className="footer-main-links" to="/FoodDrinks">Food & Drinks</Link></li>
                   <li><Link className="footer-main-links" to="/Entertainment">Entertainment</Link></li>
                   <li><Link className="footer-main-links" to="/LodgAndTran">Lodging & Transportation</Link></li>
                 </ul>
