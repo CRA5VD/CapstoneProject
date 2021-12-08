@@ -42,7 +42,7 @@ const Navbar = () => {
               <li><Link className="nav-links nav-main-links" to="/">Home</Link></li>
               <li><DropdownButton id="dropdown" title="Where To Go">
                 <Dropdown.Item className="nav-drop-sub" href="/Events">Events</Dropdown.Item>
-                <Dropdown.Item className="nav-drop-sub" href="/FoodAnDrink">Food &Drinks</Dropdown.Item>
+                <Dropdown.Item className="nav-drop-sub" href="/FoodDrinks">Food &Drinks</Dropdown.Item>
                 <Dropdown.Item className="nav-drop-sub" href="/Entertainment">Entertainment</Dropdown.Item>
               </DropdownButton></li>
               <li><Link className="nav-links nav-main-links" to="/LodgAndTran">Lodging & Transportation</Link></li>

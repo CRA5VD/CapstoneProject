@@ -7,17 +7,67 @@ class About extends Component{
       return (
       <div className="main-contain">
         <div className="banner-container">
-          <div className="banner-container-sub">
-            <img className="banner-bg" src={bannerPic} alt="Logo" />
+          <div className="banner-about-sub">
+            <img className="banner-bg w-100" src={bannerPic} alt="Logo" />
           </div>
         </div>
-          <div className='post card'>
-            <div className="card-content">
-              <h2>About</h2>
+
+
+          <div className='container'>
+            <div className="row">
+            <div className="col-sm">
+                  <h2>About</h2>
               <p>Insert</p>
+              <p>
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Click Me
+  </a>
+  
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+  </div>
+</div>
+              </div>
+            <div className="col-sm">
+                 <h2>Mission Statement</h2>
+              <p>Insert</p>
+              <p>
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Click Me
+  </a>
+  
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+  </div>
+</div>
             </div>
+           <div className="col-sm">
+                <h2>Meet the Team</h2>
+              <p>Insert</p>
+              <p>
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Click Me
+  </a>
+  
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+  </div>
+</div>
+           </div>          
           </div>
       </div>
+            </div>
+
+
+
+            
+            
       )
     }    
 }

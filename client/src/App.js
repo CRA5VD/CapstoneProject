@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import Home from './components/Home'
 import Entertainment from './components/Entertainment';
 import LodgAndTran from './components/LodgAndTran';
-import FoodAnDrinks from './components/FoodAnDrinks';
+import FoodDrinks from './components/FoodDrinks';
 import Events from './components/Events';
 import About from './components/About';
 import Contact from './components/Contact';
@@ -21,7 +21,7 @@ class App extends Component {
 
           
             <Route exact path='/' component={ Home }/>
-            <Route  path='/FoodAnDrinks' component={ FoodAnDrinks }/>
+            <Route  path='/FoodDrinks' component={ FoodDrinks }/>
             <Route  path='/Events' component={ Events }/>
             <Route  path='/Entertainment' component={ Entertainment }/>
             <Route  path='/LodgAndTran' component={ LodgAndTran }/>
