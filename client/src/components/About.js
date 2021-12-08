@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import bannerPic from '../img/washpark.jpg'
+import bannerPic from '../img/cinciparks.jpg'
 
 
 class About extends Component{
@@ -23,5 +23,3 @@ class About extends Component{
 }
 
 export default (About)
-
-

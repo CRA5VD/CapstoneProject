@@ -181,11 +181,10 @@ code {
   height:450px !important;
   padding: 0 !important;
   margin: 0 !important;
-
 }
 
 .banner-container-sub {
-  z-index: -100;
+  z-index:-100;
   width:100%;
   height:100%;
   overflow:hidden;
@@ -196,7 +195,9 @@ code {
 
 .banner-bg{
   width:100%;
+  height: 500px;
 }
+
 
 
 /* -------- Home // Collage -------- */
@@ -253,7 +254,9 @@ button.css-1h82jk3.css-1ycyyax{
 
 /* -------- Events -------- */
 
-
+.events-main-contain{
+  margin-top: 50px;
+}
 
 
 /* -------- Food & Drinks -------- */
@@ -269,6 +272,86 @@ button.css-1h82jk3.css-1ycyyax{
 /* -------- Lodging and Transportation -------- */
 
 
+.main-contain-props{
+  width: 85% !important;
+  margin-top: 50px !important;
+  margin-bottom: 50px !important;
+  margin: auto;
+  position: relative;
+}
+
+.inner-contain-props{
+  background-color:rgb(243, 243, 243) !important;
+  flex-wrap: wrap;
+}
+
+.servImage{
+  height: 300px;
+  width: 350px;
+  margin: 0px;
+  justify-content: start;
+  left: 0px;
+  margin-right: 25px;
+}
+
+.imgServRight{
+  height: 300px;
+  width: 350px;
+  margin: 0px;
+  justify-content: end;
+  right: 0px;
+}
+
+h6{
+  font-family: 'Comfortaa', Arial, Helvetica, sans-serif !important; 
+  color: black;
+  font-size: 50px !important;
+  font-weight:900 !important;
+  text-align: center;
+  text-decoration: underline !important;
+  
+}
+
+#LAndT-TopHeader{
+  margin-top: 75px;
+}
+
+/* -------- Lodging and Transportation|Buttons -------- */
+
+.servBtnAnc{
+  position:relative;
+}
+.btnServ{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  justify-content: baseline;
+  text-align: end;
+}
+
+.servBtn{
+  background-color: #1a3b96 !important;
+  color: #fff !important;
+  border-color:darkblue !important;
+  border-width: 3px !important;
+  font-family: 'Zen Kaku Gothic New', sans-serif; 
+  position:absolute;
+  bottom: 0;
+  justify-content: right;
+  text-align: right;
+  font-display: right;
+  
+}
+
+.servBtn:hover{
+  background-color: #586faf;
+  color: #fff;
+  border-color:darkblue;
+  border-width: 3px;
+  font-family: 'Zen Kaku Gothic New', sans-serif; 
+  position:absolute;
+  bottom: 0;
+} 
 
 
 /* -------- Contact -------- */
