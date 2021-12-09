@@ -21,17 +21,14 @@ mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true }
 
 const connection = mongoose.connection;
 
-//  ----------  Food And Drinks
 
 connection.once('open', () => {
   console.log("MongoDB database connection established successfully");
 });
-const foodDrinksRouter = require('./routes/FoodDrinks')
 
 
-
-app.use('/fooddrink', foodDrinksRouter)
 /* Production */
+
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'))
   app.get('*', (req, res) => {
@@ -41,24 +38,29 @@ if (process.env.NODE_ENV === 'production') {
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
 });
+
+// Routes
+//  ----------  Food And Drinks
+
+const foodDrinksRouter = require('./routes/FoodDrinks')
+
+app.use('/fooddrink', foodDrinksRouter)
+
+// ---------- Entertainment & Sports
+
+// const entertainmentSportsRouter = require('./routes/EntertainmentSports')
+
+// app.use('/entertainmentsports', entertainmentSportsRouter)
+
 
 // ---------- Arts And Music
 
-connection.once('open', () => {
-  console.log("MongoDB database connection established successfully");
-});
 const artsMusicRouter = require('./routes/ArtsMusic')
 
-
-
 app.use('/artsmusic', artsMusicRouter)
-/* Production */
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('client/build'))
-  app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'client/build'))
-  })
-}
-app.listen(port, () => {
-  console.log(`Server is running on port: ${port}`);
-});
+
+// ---------- Lodging & Transportation
+
+// const lodgingTransportRouter = require('./routes/LodgingTransport')
+
+// app.use('/lodginglransport', lodgingTransportRouter)
