@@ -363,7 +363,14 @@ h6{
 
 
 /* -------- Contact -------- */
+.banner-contact-sub{
+  background-image: url(https://photos.com/featured/cincinnati-skyline-from-top-of-roebling-adam-jones.html);
+  background-position: 100%;
+  background-size: 60%;
+  max-height: 450px !important;
+  width: 100%;
 
+}
 
 
 
@@ -375,6 +382,10 @@ h6{
   max-height: 500px !important;
   width: 100%;
 
+}
+
+.contact-form{
+  margin-top: 100px;
 }
 
 
