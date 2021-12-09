@@ -4,8 +4,8 @@ import './index.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './components/Home'
-import Entertainment from './components/Entertainment';
-import LodgAndTran from './components/LodgAndTran';
+import EntertainmentSports from './components/EntertainmentSports';
+import LodgingTransport from './components/LodgingTransport';
 import FoodDrinks from './components/FoodDrinks';
 import ArtsMusic from './components/ArtsMusic';
 import About from './components/About';
@@ -23,8 +23,8 @@ class App extends Component {
             <Route exact path='/' component={ Home }/>
             <Route  path='/FoodDrinks' component={ FoodDrinks }/>
             <Route  path='/ArtsMusic' component={ ArtsMusic }/>
-            <Route  path='/Entertainment' component={ Entertainment }/>
-            <Route  path='/LodgAndTran' component={ LodgAndTran }/>
+            <Route  path='/EntertainmentSports' component={ EntertainmentSports }/>
+            <Route  path='/LodgingTransport' component={ LodgingTransport }/>
             <Route  path='/About' component={ About }/>
             <Route  path='/Contact' component={ Contact }/> 
           
