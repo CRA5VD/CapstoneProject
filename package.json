@@ -17,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/CorbettCroslin/Capstone/issues"
   },
-  "homepage": "https://github.com/CorbettCroslin/Capstone#readme"
+  "homepage": "https://github.com/CorbettCroslin/Capstone#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.1.0",
+    "nodemon": "^2.0.15"
+  }
 }
