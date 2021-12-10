@@ -18,7 +18,7 @@ class FoodDrinks extends Component{
   constructor(props){
     super(props)
     this.state = {
-      fooddrink: [],
+      fooddrinks: [],
       loading: true
     }
   }
