@@ -23,7 +23,7 @@ class FoodDrinks extends Component{
     }
   }
   componentDidMount(){
-    axios.get(BACKEND_URL + 'fooddrink/')
+    axios.get(BACKEND_URL + 'fooddrinks/')
     .then(response => {
       this.setState({
         fooddrink : response.data,
