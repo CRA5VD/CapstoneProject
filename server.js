@@ -61,6 +61,6 @@ app.use('/artsmusic', artsMusicRouter)
 
 // ---------- Lodging & Transportation
 
-// const lodgingTransportRouter = require('./routes/LodgingTransport')
+const lodgingTransportRouter = require('./routes/LodgingTransport')
 
-// app.use('/lodginglransport', lodgingTransportRouter)
+app.use('/lodgingtransport', lodgingTransportRouter)

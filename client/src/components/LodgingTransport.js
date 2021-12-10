@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import bannerPic from '../img/UnionTerminal.jpg'
 
 
-class LodgAndTran extends Component{
+class LodgingTransport extends Component{
     render() {
       return (
       <div className="main-contain">
@@ -86,4 +86,4 @@ class LodgAndTran extends Component{
     }    
 }
 
-export default (LodgAndTran)
+export default (LodgingTransport )

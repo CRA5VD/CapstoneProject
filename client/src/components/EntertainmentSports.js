@@ -3,7 +3,7 @@ import bannerPic from '../img/BLINKRoeblingBridge.jpg'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 
-class Entertainment extends Component{
+class EntertainmentSports extends Component{
     render() {
       return (
       <div className="main-contain">
@@ -31,4 +31,4 @@ class Entertainment extends Component{
     }    
 }
 
-export default (Entertainment)
+export default (EntertainmentSports)

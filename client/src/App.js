@@ -21,7 +21,7 @@ class App extends Component {
 
           
             <Route exact path='/' component={ Home }/>
-            <Route  path='/FoodDrinks' component={ FoodDrinks }/>
+            <Route  path='/fooddrink' component={ FoodDrinks }/>
             <Route  path='/ArtsMusic' component={ ArtsMusic }/>
             <Route  path='/EntertainmentSports' component={ EntertainmentSports }/>
             <Route  path='/LodgingTransport' component={ LodgingTransport }/>
