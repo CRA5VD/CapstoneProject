@@ -48,9 +48,9 @@ app.use('/fooddrink', foodDrinksRouter)
 
 // ---------- Entertainment & Sports
 
-// const entertainmentSportsRouter = require('./routes/EntertainmentSports')
+const entertainmentSportsRouter = require('./routes/EntertainmentSports')
 
-// app.use('/entertainmentsports', entertainmentSportsRouter)
+app.use('/entertainmentsports', entertainmentSportsRouter)
 
 
 // ---------- Arts And Music
