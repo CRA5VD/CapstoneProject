@@ -18,7 +18,7 @@ class About extends Component {
           <div className="row">
             <div className="col-sm">
               <h2>About</h2>
-              <p>Insert</p>
+              <p>________</p>
               <p>
                 <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                   Click Me
