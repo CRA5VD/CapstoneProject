@@ -41,9 +41,9 @@ const Navbar = () => {
             <ul className="nav-links-sub">
               <li><Link className="nav-links nav-main-links" to="/">Home</Link></li>
               <li><DropdownButton id="dropdown" title="Where To Go">
-                <Dropdown.Item className="nav-drop-sub" href="/fooddrink">Food & Drinks</Dropdown.Item>
-                <Dropdown.Item className="nav-drop-sub" href="/entertainmentSports">Entertainment & Sports</Dropdown.Item>
-                <Dropdown.Item className="nav-drop-sub" href="/artsMusic">Arts & Music</Dropdown.Item>
+                <Dropdown.Item className="nav-drop-sub"><Link to='/fooddrink'>Food & Drinks</Link></Dropdown.Item>
+                <Dropdown.Item className="nav-drop-sub"><Link to='/entertainmentsports'>Entertainment & Sports</Link></Dropdown.Item>
+                <Dropdown.Item className="nav-drop-sub"><Link to='/artsmusic'>Arts & Music</Link></Dropdown.Item>
               </DropdownButton></li>
               <li><Link className="nav-links nav-main-links" to="/lodgingTransport">Lodging & Transportation</Link></li>
               <li><Link className="nav-links nav-main-links" to="/Contact">Contact</Link></li>

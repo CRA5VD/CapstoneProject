@@ -258,9 +258,50 @@ button.css-1h82jk3.css-1ycyyax{
   border-style:ridge;
 }
 
+/* --- Cards: Arts & Music/Food & Drinks/Entertainment & Sports --- */
+
+.card-main-contain{
+   justify-content: center !important;
+}
+
+.card-main{
+  width: 480px !important;
+  height: 700px !important;
+  margin-right: 0 !important;
+}
+.card-img{
+ width: 425px !important;
+ height: 375px !important;
+ justify-content: center !important;
+ margin: auto !important;
+ margin-top: 20px !important;
+}
+.card-name{
+  font-size: 25px !important;
+  font-weight: bolder !important;
+  margin-top: 5px !important;
+  margin-bottom: 0 !important;
+}
+.card-area{
+  font-size: 18px !important;
+  margin-top: 3px !important;
+  margin-bottom: 0 !important;
+}
+.card-address{
+  font-size: 16px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0 !important;
+}
+.card-description{
+  margin-top: 10px !important;
+  font-size: 12px !important;
+}
+.card-button-website{
+  background-color: lightseagreen;
+}
 
 
-/* -------- Events -------- */
+/* -------- Arts & Music -------- */
 
 .events-main-contain{
   margin-top: 50px;
@@ -272,7 +313,7 @@ button.css-1h82jk3.css-1ycyyax{
 
 
 
-/* -------- Entertainment -------- */
+/* -------- Entertainment & Sports -------- */
 
 
 
