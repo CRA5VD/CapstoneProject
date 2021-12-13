@@ -141,6 +141,21 @@ code {
   border: none;
 }
 
+#dropdown2{
+  background-color: transparent;
+  font-family: 'Comfortaa', Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: none !important;
+  vertical-align: middle;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  border:  none;
+  margin-left: 15px !important;
+}
+
 
 /* Navbar Video // For Home */
 
@@ -261,14 +276,16 @@ button.css-1h82jk3.css-1ycyyax{
 /* --- Cards: Arts & Music/Food & Drinks/Entertainment & Sports --- */
 
 .card-main-contain{
-   justify-content: center !important;
+  justify-content: center !important;
 }
 
 .card-main{
   width: 480px !important;
   height: 700px !important;
-  margin-right: 0 !important;
+  margin-right: 20px !important;
+  margin-left: 20px !important;
 }
+
 .card-img{
  width: 425px !important;
  height: 375px !important;
@@ -310,7 +327,11 @@ button.css-1h82jk3.css-1ycyyax{
 
 /* -------- Food & Drinks -------- */
 
-
+#foodList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center !important;
+}
 
 
 /* -------- Entertainment & Sports -------- */

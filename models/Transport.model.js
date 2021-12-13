@@ -1,13 +1,13 @@
 const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema
-const lodgingTransportSchema = new Schema({
+const transportSchema = new Schema({
 
     name: {
       type: String,
       required: true
     },
-    description: {
+    map: {
       type: String
     },
     imageURL: {
@@ -21,8 +21,11 @@ const lodgingTransportSchema = new Schema({
     },
     address: {
       type: String
+    },
+    phone: {
+      type: String
     }
 })
 
-const LodgingTransport = mongoose.model('LodgingTransport', lodgingTransportSchema)
-module.exports = LodgingTransport
+const Transport = mongoose.model('Transport', transportSchema)
+module.exports = Transport

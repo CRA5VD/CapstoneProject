@@ -59,8 +59,15 @@ const artsMusicRouter = require('./routes/ArtsMusic')
 
 app.use('/artsmusic', artsMusicRouter)
 
-// ---------- Lodging & Transportation
+// ---------- Lodging
 
-const lodgingTransportRouter = require('./routes/LodgingTransport')
+const lodgingRouter = require('./routes/Lodging')
 
-app.use('/lodgingtransport', lodgingTransportRouter)
+app.use('/lodging', lodgingRouter)
+
+
+// ---------- Transportation
+
+const transportRouter = require('./routes/Transport')
+
+app.use('/transport', transportRouter)

@@ -1,13 +1,13 @@
 const router = require('express').Router()
 
 
-let LodgingTransport = require('../models/LodgingTransport.model')
+let Transport = require('../models/Transport.model')
 
 
 router.route('/').get((req, res) => {
-  LodgingTransport.find()
-    .then(lodgingtransport  =>
-        res.json(lodgingtransport))
+  Transport.find()
+    .then(transport  =>
+        res.json(transport))
         .catch((err) => {
             res.status(400).json('Error: ' + err)
         });
@@ -15,21 +15,22 @@ router.route('/').get((req, res) => {
 
 
 router.route('/:id').get((req, res) => {
-  LodgingTransport.findById(req.params.id)
-    .then((lodgingtransport) =>{
-        res.json(lodgingtransport)
+  Transport.findById(req.params.id)
+    .then((transport) =>{
+        res.json(transport)
     }).catch((err) => {
         res.status(400).json('Error ' + err)
     });
 }).put((req,res)=>{
-  LodgingTransport.findById(req.params.id)
-        .then((lodgingtransport)=>{
-            lodgingtransport.name = req.body.name
-            lodgingtransport.description = req.body.description
-            lodgingtransport.website = req.body.website
-            lodgingtransport.imageURL = req.body.imageURL
-            lodgingtransport.area = req.body.area
-            lodgingtransport.address = req.body.address
+    Transport.findById(req.params.id)
+        .then((transport)=>{
+            transport.name = req.body.name
+            transport.map = req.body.map
+            transport.website = req.body.website
+            transport.imageURL = req.body.imageURL
+            transport.area = req.body.area
+            transport.phone = req.body.phone
+            transport.address = req.body.address
         })
     .catch((err) => {
         res.status(400).json('Error ' + err)
@@ -38,25 +39,26 @@ router.route('/:id').get((req, res) => {
 
     router.route('/add').post((req,res) => {
         const name = req.body.name
-        const description = req.body.description
+        const map = req.body.map
         const website = req.body.website
         const imageURL = req.body.imageURL
         const area = req.body.area
+        const phone = req.body.phone
         const address = req.body.address
-
     
 
-        const newLodgingTransport = new LodgingTransport ({
+        const newTransport = new Transport ({
             name,
-            description,
+            map,
             website,
             imageURL,
             area,
+            phone,
             address
         })
-        newLodgingTransport.save()
+        newTransport.save()
         .then(() => {
-            res.json('LodgingTransport Added to database')
+            res.json('Transport Added to database')
         })
         .catch((err) => {
             res.status(400).json('Error: ' + err)
