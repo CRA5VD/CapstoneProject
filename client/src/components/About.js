@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import bannerPic from '../img/cinciparks.jpg'
+import aboutPic from '../img/about.png'
+import missionPic from '../img/teamBuilding.png'
+import teamPic from '../img/team.jpg'
+
 
 
 class About extends Component {
@@ -17,8 +21,8 @@ class About extends Component {
         <div className='container'>
           <div className="row">
             <div className="col-sm">
+            <br />
               <h2>About Us</h2> 
-              <br />
               <br />
               
               <p>________</p>
@@ -30,7 +34,8 @@ class About extends Component {
               </p>
               <div class="collapse" id="collapseExample">
                 <div class="card card-body">
-                <img src=".img/about.png" alt="..." />
+                <img className="aboutPic" src={aboutPic} alt="..." />
+
                   Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
                 </div>
               </div>
@@ -46,6 +51,7 @@ class About extends Component {
               </p>
               <div class="collapse" id="collapseExample">
                 <div class="card card-body">
+                <img className="missionPic" src={missionPic} alt="" />
                   Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
                 </div>
               </div>
@@ -61,6 +67,7 @@ class About extends Component {
               </p>
               <div class="collapse" id="collapseExample">
                 <div class="card card-body">
+                <img className="teamPic" src={teamPic} alt="..." />
                   Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
                 </div>
               </div>
