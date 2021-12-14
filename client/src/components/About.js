@@ -17,7 +17,10 @@ class About extends Component {
         <div className='container'>
           <div className="row">
             <div className="col-sm">
-              <h2>About</h2>
+              <h2>About Us</h2> 
+              <br />
+              <br />
+              
               <p>________</p>
               <p>
                 <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -27,13 +30,14 @@ class About extends Component {
               </p>
               <div class="collapse" id="collapseExample">
                 <div class="card card-body">
+                <img src=".img/about.png" alt="..." />
                   Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
                 </div>
               </div>
             </div>
             <div className="col-sm">
               <h2>Mission Statement</h2>
-              <p>Insert</p>
+              <p>_________</p>
               <p>
                 <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                   Click Me
@@ -48,7 +52,7 @@ class About extends Component {
             </div>
             <div className="col-sm">
               <h2>Meet the Team</h2>
-              <p>Insert</p>
+              <p>_________</p>
               <p>
                 <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                   Click Me
