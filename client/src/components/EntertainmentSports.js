@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button'
 import axios from 'axios'
 import {BACKEND_URL} from '../config'
 
-const EntertainmentSports = (props) => {
+const EntertainmentSport = (props) => {
       return (
       <div className="main-contain">
         <div className="banner-contain">

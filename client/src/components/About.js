@@ -17,7 +17,10 @@ class About extends Component {
         <div className='container'>
           <div className="row">
             <div className="col-sm">
-              <h2>About</h2>
+              <h2>About Us</h2> 
+              <br />
+              <br />
+              
               <p>________</p>
               <p>
                 <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -33,7 +36,7 @@ class About extends Component {
             </div>
             <div className="col-sm">
               <h2>Mission Statement</h2>
-              <p>Insert</p>
+              <p>_________</p>
               <p>
                 <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                   Click Me
@@ -48,7 +51,7 @@ class About extends Component {
             </div>
             <div className="col-sm">
               <h2>Meet the Team</h2>
-              <p>Insert</p>
+              <p>_________</p>
               <p>
                 <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                   Click Me
