@@ -1,26 +1,28 @@
 import React, { Component } from 'react';
-import bannerPic from '../img/UnionTerminal.jpg'
-import Card from 'react-bootstrap/Card'
+import bannerPic from '../img/CincinnatiLandscape.jpg'
 import Button from 'react-bootstrap/Button'
 import axios from 'axios'
 import {BACKEND_URL} from '../config'
 
 
-const ArtMusic = (props) => {
+
+
+
+const TransportZ = (props) => {
   return (
     <div className="main-contain">
    
     <div className="events-main-contain">
       <Card className="card-main">
-        <Card.Img className="card-img" variant="top" src={props.artmusic.imageURL} />
+        <Card.Img className="card-img" variant="top" src={props.transportz.imageURL} />
         <Card.Body>
-          <Card.Title><h2 className="card-name">{props.artmusic.name}</h2></Card.Title>
+          <Card.Title><h2 className="card-name">{props.transportz.name}</h2></Card.Title>
             <Card.Text>
-              <h3 className="card-area">{props.artmusic.area}</h3>
-              <h4 className="card-address">{props.artmusic.address}</h4>
-              <p className="card-description">{props.artmusic.description}</p>
+              <h3 className="card-area">{props.transportz.area}</h3>
+              <h4 className="card-address">{props.transportz.address}</h4>
+              <p className="card-description">{props.transportz.description}</p>
           </Card.Text>
-          <Button className="card-button-website right" variant="primary" href={props.artmusic.website}>Website</Button>
+          <Button className="card-button-website right" variant="primary" href={props.transportz.website}>Website</Button>
         </Card.Body>
       </Card>
     </div>
@@ -30,30 +32,30 @@ const ArtMusic = (props) => {
 }
  
 
-class ArtMusics extends Component{
+class Transport extends Component{
   constructor(props){
     super(props)
     this.state = {
-      artmusics: [],
+      transport: [],
       loading: true
     }
   }
   componentDidMount(){
-    axios.get(BACKEND_URL + 'artmusic/')
+    axios.get(BACKEND_URL + 'transportz/')
     .then(response => {
       this.setState({
-        artmusic : response.data,
+        transportz: response.data,
         loading: false
       })
-      console.log('artmusic attractions')
+      console.log('transportz attractions')
     })
     .catch((error) => {
       console.log(error)
     });
   }
-  artmusicList() {
-    return this.state.artmusic.map((currentArt) => {
-      return <ArtMusic artmusic = {currentArt} key={currentArt._id} />
+  transportzList() {
+    return this.state.transportz.map((currentTran) => {
+      return <TransportZ transportz = {currentTran} key={currentTran._id} />
     })
   }
     render() {
@@ -67,8 +69,8 @@ class ArtMusics extends Component{
           </div> 
             <div className="container-fluid">
               <div className="row justify-content-center">
-                <div className="" id='artList'>
-                  {this.artmusicList()}
+                <div className="" id='TranList'>
+                  {this.transportzList()}
                 </div>
               </div>
             </div>
@@ -84,4 +86,4 @@ class ArtMusics extends Component{
     }    
 }
 
-export default ArtMusics
+export default Transport

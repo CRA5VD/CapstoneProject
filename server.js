@@ -26,19 +26,6 @@ connection.once('open', () => {
   console.log("MongoDB database connection established successfully");
 });
 
-
-/* Production */
-
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('client/build'))
-  app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'client/build'))
-  })
-}
-app.listen(port, () => {
-  console.log(`Server is running on port: ${port}`);
-});
-
 // Routes
 //  ----------  Food And Drinks
 
@@ -53,14 +40,34 @@ const entertainmentSportsRouter = require('./routes/EntertainmentSports')
 app.use('/entertainmentsports', entertainmentSportsRouter)
 
 
+/* Production */
+
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('client/build'))
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client/build'))
+  })
+}
+app.listen(port, () => {
+  console.log(`Server is running on port: ${port}`);
+});
+
+
 // ---------- Arts And Music
 
 const artsMusicRouter = require('./routes/ArtsMusic')
 
 app.use('/artsmusic', artsMusicRouter)
 
-// ---------- Lodging & Transportation
+// ---------- Lodging
 
-const lodgingTransportRouter = require('./routes/LodgingTransport')
+const lodgingRouter = require('./routes/Lodging')
 
-app.use('/lodgingtransport', lodgingTransportRouter)
+app.use('/lodging', lodgingRouter)
+
+
+// ---------- Transportation
+
+const transportRouter = require('./routes/Transport')
+
+app.use('/transport', transportRouter)

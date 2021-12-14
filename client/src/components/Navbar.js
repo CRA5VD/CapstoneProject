@@ -45,9 +45,12 @@ const Navbar = () => {
                 <Dropdown.Item className="nav-drop-sub"><Link to='/entertainmentsports'>Entertainment & Sports</Link></Dropdown.Item>
                 <Dropdown.Item className="nav-drop-sub"><Link to='/artsmusic'>Arts & Music</Link></Dropdown.Item>
               </DropdownButton></li>
-              <li><Link className="nav-links nav-main-links" to="/lodgingTransport">Lodging & Transportation</Link></li>
-              <li><Link className="nav-links nav-main-links" to="/Contact">Contact</Link></li>
-              <li><Link className="nav-links nav-main-links" to="/About">About</Link></li>
+              <li><DropdownButton id="dropdown2" title="Plan Your Trip">
+                <Dropdown.Item className="nav-drop-sub"><Link to='/lodging'>Lodging</Link></Dropdown.Item>
+                <Dropdown.Item className="nav-drop-sub"><Link to='/transport'>Transportation</Link></Dropdown.Item>
+              </DropdownButton></li>
+              <li><Link className="nav-links nav-main-links" to="/contact">Contact</Link></li>
+              <li><Link className="nav-links nav-main-links" to="/about">About</Link></li>
             </ul>
           </div>
         </div>

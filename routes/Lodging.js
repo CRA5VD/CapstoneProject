@@ -1,13 +1,13 @@
 const router = require('express').Router()
 
 
-let EntertainmentSports = require('../models/EntertainmentSports.model')
+let Lodging = require('../models/Lodging.model')
 
 
 router.route('/').get((req, res) => {
-    EntertainmentSports.find()
-    .then(entertainmentsports  =>
-        res.json(entertainmentsports))
+  Lodging.find()
+    .then(lodging  =>
+        res.json(lodging))
         .catch((err) => {
             res.status(400).json('Error: ' + err)
         });
@@ -15,21 +15,21 @@ router.route('/').get((req, res) => {
 
 
 router.route('/:id').get((req, res) => {
-    EntertainmentSports.findById(req.params.id)
-    .then((entertainmentsports) =>{
-        res.json(entertainmentsports)
+  Lodging.findById(req.params.id)
+    .then((lodging) =>{
+        res.json(lodging)
     }).catch((err) => {
         res.status(400).json('Error ' + err)
     });
 }).put((req,res)=>{
-    EntertainmentSports.findById(req.params.id)
-        .then((entertainmentsports)=>{
-            entertainmentsports.name = req.body.name
-            entertainmentsports.description = req.body.description
-            entertainmentsports.website = req.body.website
-            entertainmentsports.imageURL = req.body.imageURL
-            entertainmentsports.area = req.body.area
-            entertainmentsports.address = req.body.address
+  Lodging.findById(req.params.id)
+        .then((lodging)=>{
+            lodging.name = req.body.name
+            lodging.description = req.body.description
+            lodging.website = req.body.website
+            lodging.imageURL = req.body.imageURL
+            lodging.area = req.body.area
+            lodging.address = req.body.address
         })
     .catch((err) => {
         res.status(400).json('Error ' + err)
@@ -46,7 +46,7 @@ router.route('/:id').get((req, res) => {
 
     
 
-        const newEntertainmentSports = new EntertainmentSports ({
+        const newLodging = new Lodging ({
             name,
             description,
             website,
@@ -54,9 +54,9 @@ router.route('/:id').get((req, res) => {
             area,
             address
         })
-        newEntertainmentSports.save()
+        newLodging.save()
         .then(() => {
-            res.json('EntertainmentSports Added to database')
+            res.json('Lodging Added to database')
         })
         .catch((err) => {
             res.status(400).json('Error: ' + err)
@@ -69,4 +69,3 @@ router.route('/:id').get((req, res) => {
 
 
 module.exports = router;
-

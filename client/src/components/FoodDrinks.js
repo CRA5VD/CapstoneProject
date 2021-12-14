@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import bannerPic from '../img/JungleJims.jpg'
+import bannerPic from '../img/cincy.jpg'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import axios from 'axios'
@@ -19,7 +19,7 @@ const FoodDrink = (props) => {
               <h4 className="card-address">{props.fooddrink.address}</h4>
               <p className="card-description">{props.fooddrink.description}</p>
           </Card.Text>
-          <Button className="card-button-website" variant="primary" href={props.fooddrink.website}>Website</Button>
+          <Button className="card-button-website right" variant="primary" href={props.fooddrink.website}>Website</Button>
         </Card.Body>
       </Card>
     </div>
@@ -66,7 +66,7 @@ class FoodDrinks extends Component{
           </div> 
             <div className="container-fluid">
               <div className="row justify-content-center">
-                <div className="col-6">
+                <div id='foodList'>
                   {this.fooddrinkList()}
                 </div>
               </div>

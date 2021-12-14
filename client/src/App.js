@@ -5,7 +5,8 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './components/Home'
 import EntertainmentSports from './components/EntertainmentSports';
-import LodgingTransport from './components/LodgingTransport';
+import Lodging from './components/Lodging';
+import Transport from './components/Transport';
 import FoodDrinks from './components/FoodDrinks';
 import ArtsMusic from './components/ArtsMusic';
 import About from './components/About';
@@ -23,8 +24,9 @@ class App extends Component {
             <Route exact path='/' component={ Home }/>
             <Route  path='/fooddrink' component={ FoodDrinks }/>
             <Route  path='/ArtsMusic' component={ ArtsMusic }/>
-            <Route  path='/EntertainmentSports' component={ EntertainmentSports }/>
-            <Route  path='/LodgingTransport' component={ LodgingTransport }/>
+            <Route  path='/entertainmentsports' component={ EntertainmentSports }/>
+            <Route  path='/Lodging' component={ Lodging }/>
+            <Route  path='/Transport' component={ Transport }/>
             <Route  path='/About' component={ About }/>
             <Route  path='/Contact' component={ Contact }/> 
           
