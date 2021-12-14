@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import bannerPic from '../img/JungleJims.jpg'
+import bannerPic from '../img/cincy.jpg'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import axios from 'axios'
@@ -66,7 +66,7 @@ class FoodDrinks extends Component{
           </div> 
             <div className="container-fluid">
               <div className="row justify-content-center">
-                <div className="" id='foodList'>
+                <div id='foodList'>
                   {this.fooddrinkList()}
                 </div>
               </div>

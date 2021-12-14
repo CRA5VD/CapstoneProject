@@ -260,6 +260,7 @@ button.css-1h82jk3.css-1ycyyax{
 }
 
 #widgetWeather{
+  justify-content: center ;
   width:300px;
   height:520px;
 }
@@ -336,7 +337,11 @@ button.css-1h82jk3.css-1ycyyax{
 
 /* -------- Entertainment & Sports -------- */
 
-
+#sportsList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center !important;
+}
 
 
 /* -------- Lodging and Transportation -------- */

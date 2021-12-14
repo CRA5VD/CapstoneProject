@@ -24,5 +24,5 @@ const entertainmentSportsSchema = new Schema({
     }
 })
 
-const EntertainmentSports = mongoose.model('EntertainmentSports', entertainmentSportsSchema)
+const EntertainmentSports = mongoose.model('EntertainmentSports', entertainmentSportsSchema, 'entertainmentsports')
 module.exports = EntertainmentSports

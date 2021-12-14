@@ -24,5 +24,5 @@ const foodDrinkSchema = new Schema({
     }
 })
 
-const FoodDrink = mongoose.model('FoodDrink', foodDrinkSchema)
+const FoodDrink = mongoose.model('FoodDrink', foodDrinkSchema, 'fooddrinks')
 module.exports = FoodDrink

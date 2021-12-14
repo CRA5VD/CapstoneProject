@@ -4,7 +4,7 @@ const router = require('express').Router()
 let EntertainmentSports = require('../models/EntertainmentSports.model')
 
 
-router.route('/:id').get((req, res) => {
+router.route('/').get((req, res) => {
     EntertainmentSports.find()
     .then(entertainmentsports  =>
         res.json(entertainmentsports))

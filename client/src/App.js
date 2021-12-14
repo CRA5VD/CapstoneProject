@@ -24,7 +24,7 @@ class App extends Component {
             <Route exact path='/' component={ Home }/>
             <Route  path='/fooddrink' component={ FoodDrinks }/>
             <Route  path='/ArtsMusic' component={ ArtsMusic }/>
-            <Route  path='/EntertainmentSports' component={ EntertainmentSports }/>
+            <Route  path='/entertainmentsports' component={ EntertainmentSports }/>
             <Route  path='/Lodging' component={ Lodging }/>
             <Route  path='/Transport' component={ Transport }/>
             <Route  path='/About' component={ About }/>
