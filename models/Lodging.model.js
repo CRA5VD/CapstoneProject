@@ -24,6 +24,6 @@ const lodgingSchema = new Schema({
     }
 })
 
-const Lodging = mongoose.model('Lodging', lodgingSchema, 'lodgings')
+const Lodging = mongoose.model('Lodging', lodgingSchema, 'lodging')
 module.exports = Lodging
 

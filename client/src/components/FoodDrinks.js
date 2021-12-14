@@ -11,8 +11,8 @@ const FoodDrink = (props) => {
    
     <div className="events-main-contain">
       <Card className="card-main">
-        <Card.Img className="card-img" variant="top" src={props.fooddrink.imageURL} />
-        <Card.Body>
+        <Card.Img className="card-img"  id="card-food-img"  variant="top" src={props.fooddrink.imageURL} />
+        <Card.Body className="card-body">
           <Card.Title><h2 className="card-name">{props.fooddrink.name}</h2></Card.Title>
             <Card.Text>
               <h3 className="card-area">{props.fooddrink.area}</h3>

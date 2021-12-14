@@ -276,7 +276,9 @@ button.css-1h82jk3.css-1ycyyax{
   border-style:ridge;
 }
 
+
 /* --- Cards: Arts & Music/Food & Drinks/Entertainment & Sports --- */
+
 
 .card-main-contain{
   justify-content: center !important;
@@ -288,96 +290,153 @@ button.css-1h82jk3.css-1ycyyax{
   margin-right: 20px !important;
   margin-left: 20px !important;
 }
-
 .card-img{
  width: 425px !important;
  height: 375px !important;
  justify-content: center !important;
- margin: auto !important;
- margin-top: 20px !important;
 }
 .card-name{
   font-size: 25px !important;
   font-weight: bolder !important;
   margin-top: 5px !important;
   margin-bottom: 0 !important;
+  text-align: left;
 }
 .card-area{
-  font-size: 18px !important;
+  font-size: 20px !important;
   margin-top: 3px !important;
   margin-bottom: 0 !important;
+  text-align: left;
 }
 .card-address{
-  font-size: 16px !important;
+  font-size: 18px !important;
   margin-top: 0px !important;
   margin-bottom: 0 !important;
+  text-align: left;
 }
 .card-description{
   margin-top: 10px !important;
-  font-size: 12px !important;
+  font-size: 13px !important;
+  text-align: left;
+ 
 }
 .card-button-website{
   background-color: lightseagreen;
+  margin-right: 25px !important;
 }
 
 
-/* --- Cards: Lodging & Transportation --- */
+/* --- Cards: Lodging --- */
 
 
-.card-main-contain-lt{
+.card-name-l{
+  font-size: 40px !important;
+  font-weight: bolder !important;
+  margin-top: 0px !important;
+  margin-bottom: 0 !important;
+}
+.card-main-contain-l{
   justify-content: center !important;
+  margin-top: 50px !important;
+  margin-bottom: 0 !important;
 }
-.card-main-lt{
+.card-main-l{
   width: 950px !important;
   height: 375px !important;
   display: flex;
   flex-wrap: wrap;
-
 }
-.card-img-lt{
+.card-img-l{
  width: 425px !important;
  height: 375px !important;
- margin-top: 20px !important;
- margin-left: 20px !important;
 }
-.card-name-lt{
-  font-size: 50px !important;
-  font-weight: bolder !important;
-  margin-top: 25px !important;
-  margin-bottom: 0 !important;
-}
-.card-area-lt{
+.card-area-l{
   font-size: 20px !important;
-  margin-top: 18px !important;
+  margin-top: 10px !important;
   margin-bottom: 0 !important;
 }
-.card-address-lt{
+.card-address-l{
   font-size: 18px !important;
   margin-top: 5px !important;
   margin-bottom: 0 !important;
 }
-.card-phone-lt{
-  margin-top: 10px !important;
-  font-size: 23px !important;
-}
-.card-button-website-lt{
-  margin-top: 25px !important;
+.card-button-website-l{
+  margin-top: 0px !important;
   margin-right: 25px !important;
   background-color: lightseagreen;
-}
-.card-button-map-lt{
-  margin-top: 25px !important;
-  background-color: lightseagreen;
-}
-div.card-body{
-  margin: 0 !important;
-  text-align: right;
-  width: 475px;
 }
 img.card-img-top{
   margin: 0!important;
   width: 400px;
 }
+.card-description-l{
+  margin-top: 10px !important;
+  font-size: 14px !important;
+}
+.card-body-l{
+  width: 525px;
+}
+
+
+/* --- Cards: Transportation --- */
+
+
+.card-name-t{
+  font-size: 50px !important;
+  font-weight: bolder !important;
+  margin-top: 25px !important;
+  margin-bottom: 0 !important;
+  text-align: right;
+}
+.card-main-t{
+  width: 950px !important;
+  height: 375px !important;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-img-t{
+ width: 425px !important;
+ height: 375px !important;
+}
+.card-area-t{
+  font-size: 22px !important;
+  margin-top: 18px !important;
+  margin-bottom: 0 !important;
+  text-align: right;
+}
+.card-address-t{
+  font-size: 18px !important;
+  margin-top: 8px !important;
+  margin-bottom: 0 !important;
+  text-align: right;
+}
+.card-button-website-t{
+  margin-top: 25px !important;
+  margin-right: 3px !important;
+  background-color: lightseagreen;
+}
+.card-button-map-t{
+  margin-top: 25px !important;
+  margin-right: 25px !important;
+  background-color: lightseagreen;
+}
+img.card-img-top{
+  margin: 0!important;
+  width: 400px;
+}
+.card-button-map-t{
+  margin-top: 25px !important;
+  background-color: lightseagreen;
+}
+.card-phone-t{
+  margin-top: 13px !important;
+  font-size: 23px !important;
+  text-align: right;
+}
+.card-body-t{
+  width: 500px;
+}
+
 
 /* -------- Arts & Music -------- */
 
@@ -391,6 +450,10 @@ img.card-img-top{
   flex-wrap: wrap;
   justify-content: center !important;
 }
+#card-art-img{
+  margin:auto !important;
+  margin-top: 20px !important;
+}
 
 
 /* -------- Food & Drinks -------- */
@@ -400,6 +463,10 @@ img.card-img-top{
   display: flex;
   flex-wrap: wrap;
   justify-content: center !important;
+}
+#card-food-img{
+  margin:auto !important;
+  margin-top: 20px !important;
 }
 
 
@@ -411,11 +478,17 @@ img.card-img-top{
   flex-wrap: wrap;
   justify-content: center !important;
 }
+#card-sports-img{
+  margin:auto !important;
+  margin-top: 20px !important;
+}
 
 
 /* -------- Lodging -------- */
 
-
+.main-contain-l{
+ margin-top: 50px !important;
+}
 #lodgingList{
   display: flex;
   flex-wrap: wrap;
@@ -431,6 +504,7 @@ img.card-img-top{
   flex-wrap: wrap;
   justify-content: center !important;
 }
+
 
 
 /* -------- Contact -------- */

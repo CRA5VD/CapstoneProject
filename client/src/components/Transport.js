@@ -11,20 +11,19 @@ import {BACKEND_URL} from '../config'
 
 const Transport = (props) => {
   return (
-    <div className="main-contain-lt">
-   
+  <div className="main-contain-t">
     <div className="events-main-contain">
-      <Card className="card-main-lt">
-        <Card.Img className="card-img-lt" variant="top" src={props.transport.imageURL} />
-        <Card.Body>
-          <Card.Title><h2 className="card-name-lt">{props.transport.name}</h2></Card.Title>
+      <Card className="card-main-t">
+        <Card.Img className="card-img-t" variant="top" src={props.transport.imageURL} />
+        <Card.Body className="card-body-t">
+          <Card.Title><h2 className="card-name-t">{props.transport.name}</h2></Card.Title>
             <Card.Text>
-              <h3 className="card-area-lt">{props.transport.area}</h3>
-              <h4 className="card-address-lt">{props.transport.address}</h4>
-              <p className="card-phone-lt">{props.transport.phone}</p>
+              <h3 className="card-area-t">{props.transport.area}</h3>
+              <h4 className="card-address-t">{props.transport.address}</h4>
+              <p className="card-phone-t">{props.transport.phone}</p>
           </Card.Text>
-          <Button className="card-button-website-lt" variant="primary" href={props.transport.website}>Website</Button>
-          <Button className="card-button-map-lt" variant="primary" href={props.transport.map}>Routes</Button>
+          <Button className="card-button-website-t right" variant="primary" href={props.transport.website}>Website</Button>
+          <Button className="card-button-map-t right" variant="primary" href={props.transport.map}>Routes</Button>
         </Card.Body>
       </Card>
     </div>
@@ -63,7 +62,7 @@ class Transports extends Component{
     render() {
       return (
         this.state.loading === false ? (
-          <div className="">
+          <div>
             <div className="banner-contain">
               <div className="banner-sub">
               <img className="banner-bg" src={bannerPic} alt="Logo" />
@@ -71,7 +70,7 @@ class Transports extends Component{
           </div> 
             <div className="container-fluid">
               <div className="row justify-content-center">
-                <div className="" id='tranList'>
+                <div id='tranList'>
                   {this.transportList()}
                 </div>
               </div>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import bannerPic from '../img/fSquare.jpg'
+import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import axios from 'axios'
 import {BACKEND_URL} from '../config'
@@ -9,20 +10,19 @@ import {BACKEND_URL} from '../config'
 
 const Lodging = (props) => {
   return (
-    <div className="main-contain">
-   
-    <div className="events-main-contain">
-      <Card className="card-main">
-        <Card.Img className="card-img" variant="top" src={props.lodging.imageURL} />
-        <Card.Body>
-          <Card.Title><h2 className="card-name">{props.lodging.name}</h2></Card.Title>
+  <div className="main-contain-l">
+    <div className="events-main-contain-l">
+      <Card className="card-main-l">
+        <Card.Body className="card-body-l">
+          <Card.Title><h2 className="card-name-l">{props.lodging.name}</h2></Card.Title>
             <Card.Text>
-              <h3 className="card-area">{props.lodging.area}</h3>
-              <h4 className="card-address">{props.lodging.address}</h4>
-              <p className="card-description">{props.lodging.description}</p>
+              <h3 className="card-area-l">{props.lodging.area}</h3>
+              <h4 className="card-address-l">{props.lodging.address}</h4>
+              <p className="card-description-l">{props.lodging.description}</p>
           </Card.Text>
-          <Button className="card-button-website right" variant="primary" href={props.lodging.website}>Website</Button>
-        </Card.Body>
+          <Button className="card-button-website-l" variant="primary" href={props.lodging.website}>Website</Button>
+      </Card.Body>
+          <Card.Img className="card-img-l" variant="top" src={props.lodging.imageURL} />
       </Card>
     </div>
   </div>
@@ -60,7 +60,7 @@ class Lodgings extends Component{
     render() {
       return (
         this.state.loading === false ? (
-          <div className="">
+          <div>
             <div className="banner-contain">
               <div className="banner-sub">
               <img className="banner-bg" src={bannerPic} alt="Logo" />
@@ -68,7 +68,7 @@ class Lodgings extends Component{
           </div> 
             <div className="container-fluid">
               <div className="row justify-content-center">
-                <div className="" id='lodgingList'>
+                <div id='lodgingList'>
                   {this.lodgingList()}
                 </div>
               </div>
