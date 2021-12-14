@@ -7,21 +7,21 @@ import {BACKEND_URL} from '../config'
 
 
 
-const LodgingZ = (props) => {
+const Lodging = (props) => {
   return (
     <div className="main-contain">
    
     <div className="events-main-contain">
       <Card className="card-main">
-        <Card.Img className="card-img" variant="top" src={props.lodgingz.imageURL} />
+        <Card.Img className="card-img" variant="top" src={props.lodging.imageURL} />
         <Card.Body>
-          <Card.Title><h2 className="card-name">{props.lodgingz.name}</h2></Card.Title>
+          <Card.Title><h2 className="card-name">{props.lodging.name}</h2></Card.Title>
             <Card.Text>
-              <h3 className="card-area">{props.lodgingz.area}</h3>
-              <h4 className="card-address">{props.lodgingz.address}</h4>
-              <p className="card-description">{props.lodgingz.description}</p>
+              <h3 className="card-area">{props.lodging.area}</h3>
+              <h4 className="card-address">{props.lodging.address}</h4>
+              <p className="card-description">{props.lodging.description}</p>
           </Card.Text>
-          <Button className="card-button-website right" variant="primary" href={props.lodgingz.website}>Website</Button>
+          <Button className="card-button-website right" variant="primary" href={props.lodging.website}>Website</Button>
         </Card.Body>
       </Card>
     </div>
@@ -31,30 +31,30 @@ const LodgingZ = (props) => {
 }
  
 
-class Lodging extends Component{
+class Lodgings extends Component{
   constructor(props){
     super(props)
     this.state = {
-      lodging: [],
+      lodgings: [],
       loading: true
     }
   }
   componentDidMount(){
-    axios.get(BACKEND_URL + 'lodgingz/')
+    axios.get(BACKEND_URL + 'lodging/')
     .then(response => {
       this.setState({
-        lodgingz : response.data,
+        lodging : response.data,
         loading: false
       })
-      console.log('lodgingz attractions')
+      console.log('lodging attractions')
     })
     .catch((error) => {
       console.log(error)
     });
   }
-  lodgingzList() {
-    return this.state.lodgingz.map((currentLod) => {
-      return <Lodgingz lodgingz = {currentLod} key={currentLod._id} />
+  lodgingList() {
+    return this.state.lodging.map((currentLod) => {
+      return <Lodging lodging = {currentLod} key={currentLod._id} />
     })
   }
     render() {
@@ -69,7 +69,7 @@ class Lodging extends Component{
             <div className="container-fluid">
               <div className="row justify-content-center">
                 <div className="" id='lodgingList'>
-                  {this.lodgingzList()}
+                  {this.lodgingList()}
                 </div>
               </div>
             </div>
@@ -85,4 +85,4 @@ class Lodging extends Component{
     }    
 }
 
-export default Lodging
+export default Lodgings

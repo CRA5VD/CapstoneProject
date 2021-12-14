@@ -27,5 +27,5 @@ const transportSchema = new Schema({
     }
 })
 
-const Transport = mongoose.model('Transport', transportSchema)
+const Transport = mongoose.model('Transport', transportSchema, 'transports')
 module.exports = Transport

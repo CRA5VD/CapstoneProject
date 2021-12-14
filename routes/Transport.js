@@ -6,8 +6,8 @@ let Transport = require('../models/Transport.model')
 
 router.route('/').get((req, res) => {
   Transport.find()
-    .then(transport  =>
-        res.json(transport))
+    .then(transports  =>
+        res.json(transports))
         .catch((err) => {
             res.status(400).json('Error: ' + err)
         });
@@ -15,22 +15,22 @@ router.route('/').get((req, res) => {
 
 
 router.route('/:id').get((req, res) => {
-  Transport.findById(req.params.id)
-    .then((transport) =>{
-        res.json(transport)
+  Transports.findById(req.params.id)
+    .then((transports) =>{
+        res.json(transports)
     }).catch((err) => {
         res.status(400).json('Error ' + err)
     });
 }).put((req,res)=>{
-    Transport.findById(req.params.id)
-        .then((transport)=>{
-            transport.name = req.body.name
-            transport.map = req.body.map
-            transport.website = req.body.website
-            transport.imageURL = req.body.imageURL
-            transport.area = req.body.area
-            transport.phone = req.body.phone
-            transport.address = req.body.address
+    Transports.findById(req.params.id)
+        .then((transports)=>{
+            transports.name = req.body.name
+            transports.map = req.body.map
+            transports.website = req.body.website
+            transports.imageURL = req.body.imageURL
+            transports.area = req.body.area
+            transports.phone = req.body.phone
+            transports.address = req.body.address
         })
     .catch((err) => {
         res.status(400).json('Error ' + err)
@@ -47,7 +47,7 @@ router.route('/:id').get((req, res) => {
         const address = req.body.address
     
 
-        const newTransport = new Transport ({
+        const newTransport = new Transports ({
             name,
             map,
             website,

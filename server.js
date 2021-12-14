@@ -26,6 +26,8 @@ connection.once('open', () => {
   console.log("MongoDB database connection established successfully");
 });
 
+
+
 // Routes
 //  ----------  Food And Drinks
 
@@ -38,20 +40,6 @@ app.use('/fooddrink', foodDrinksRouter)
 const entertainmentSportsRouter = require('./routes/EntertainmentSports')
 
 app.use('/entertainmentsports', entertainmentSportsRouter)
-
-
-/* Production */
-
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('client/build'))
-  app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'client/build'))
-  })
-}
-app.listen(port, () => {
-  console.log(`Server is running on port: ${port}`);
-});
-
 
 // ---------- Arts And Music
 
@@ -71,3 +59,21 @@ app.use('/lodging', lodgingRouter)
 const transportRouter = require('./routes/Transport')
 
 app.use('/transport', transportRouter)
+
+
+
+
+/* Production */
+
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static('client/build'))
+  app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client/build'))
+  })
+}
+app.listen(port, () => {
+  console.log(`Server is running on port: ${port}`);
+});
+
+
+

@@ -6,8 +6,8 @@ let Lodging = require('../models/Lodging.model')
 
 router.route('/').get((req, res) => {
   Lodging.find()
-    .then(lodging  =>
-        res.json(lodging))
+    .then(lodgings  =>
+        res.json(lodgings))
         .catch((err) => {
             res.status(400).json('Error: ' + err)
         });
@@ -15,21 +15,21 @@ router.route('/').get((req, res) => {
 
 
 router.route('/:id').get((req, res) => {
-  Lodging.findById(req.params.id)
-    .then((lodging) =>{
-        res.json(lodging)
+  Lodgings.findById(req.params.id)
+    .then((lodgings) =>{
+        res.json(lodgings)
     }).catch((err) => {
         res.status(400).json('Error ' + err)
     });
 }).put((req,res)=>{
-  Lodging.findById(req.params.id)
-        .then((lodging)=>{
-            lodging.name = req.body.name
-            lodging.description = req.body.description
-            lodging.website = req.body.website
-            lodging.imageURL = req.body.imageURL
-            lodging.area = req.body.area
-            lodging.address = req.body.address
+  Lodgings.findById(req.params.id)
+        .then((lodgings)=>{
+            lodgings.name = req.body.name
+            lodgings.description = req.body.description
+            lodgings.website = req.body.website
+            lodgings.imageURL = req.body.imageURL
+            lodgings.area = req.body.area
+            lodgings.address = req.body.address
         })
     .catch((err) => {
         res.status(400).json('Error ' + err)
@@ -46,7 +46,7 @@ router.route('/:id').get((req, res) => {
 
     
 
-        const newLodging = new Lodging ({
+        const newLodging = new Lodgings ({
             name,
             description,
             website,

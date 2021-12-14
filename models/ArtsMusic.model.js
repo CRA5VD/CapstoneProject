@@ -24,5 +24,5 @@ const artsMusicSchema = new Schema({
     }
 })
 
-const ArtsMusic = mongoose.model('ArtsMusic', artsMusicSchema)
+const ArtsMusic = mongoose.model('ArtsMusic', artsMusicSchema, 'artsmusics')
 module.exports = ArtsMusic
