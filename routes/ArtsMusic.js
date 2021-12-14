@@ -6,8 +6,8 @@ let ArtsMusic = require('../models/ArtsMusic.model')
 
 router.route('/').get((req, res) => {
   ArtsMusic.find()
-    .then(artsmusic  =>
-        res.json(artsmusic))
+    .then(artsmusics  =>
+        res.json(artsmusics))
         .catch((err) => {
             res.status(400).json('Error: ' + err)
         });
@@ -15,21 +15,21 @@ router.route('/').get((req, res) => {
 
 
 router.route('/:id').get((req, res) => {
-  ArtsMusic.findById(req.params.id)
-    .then((artsmusic) =>{
-        res.json(artsmusic)
+  ArtsMusics.findById(req.params.id)
+    .then((artsmusics) =>{
+        res.json(artsmusics)
     }).catch((err) => {
         res.status(400).json('Error ' + err)
     });
 }).put((req,res)=>{
-  ArtsMusic.findById(req.params.id)
-        .then((artsmusic)=>{
-            artsmusic.name = req.body.name
-            artsmusic.description = req.body.description
-            artsmusic.website = req.body.website
-            artsmusic.imageURL = req.body.imageURL
-            artsmusic.area = req.body.area
-            artsmusic.address = req.body.address
+  ArtsMusics.findById(req.params.id)
+        .then((artsmusics)=>{
+            artsmusics.name = req.body.name
+            artsmusics.description = req.body.description
+            artsmusics.website = req.body.website
+            artsmusics.imageURL = req.body.imageURL
+            artsmusics.area = req.body.area
+            artsmusics.address = req.body.address
         })
     .catch((err) => {
         res.status(400).json('Error ' + err)
@@ -46,7 +46,7 @@ router.route('/:id').get((req, res) => {
 
     
 
-        const newArtsMusic = new ArtsMusic ({
+        const newArtsMusic = new ArtsMusics ({
             name,
             description,
             website,

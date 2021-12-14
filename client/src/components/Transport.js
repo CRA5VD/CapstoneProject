@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import bannerPic from '../img/CincinnatiLandscape.jpg'
+import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import axios from 'axios'
 import {BACKEND_URL} from '../config'
@@ -8,21 +9,22 @@ import {BACKEND_URL} from '../config'
 
 
 
-const TransportZ = (props) => {
+const Transport = (props) => {
   return (
-    <div className="main-contain">
+    <div className="main-contain-lt">
    
     <div className="events-main-contain">
-      <Card className="card-main">
-        <Card.Img className="card-img" variant="top" src={props.transportz.imageURL} />
+      <Card className="card-main-lt">
+        <Card.Img className="card-img-lt" variant="top" src={props.transport.imageURL} />
         <Card.Body>
-          <Card.Title><h2 className="card-name">{props.transportz.name}</h2></Card.Title>
+          <Card.Title><h2 className="card-name-lt">{props.transport.name}</h2></Card.Title>
             <Card.Text>
-              <h3 className="card-area">{props.transportz.area}</h3>
-              <h4 className="card-address">{props.transportz.address}</h4>
-              <p className="card-description">{props.transportz.description}</p>
+              <h3 className="card-area-lt">{props.transport.area}</h3>
+              <h4 className="card-address-lt">{props.transport.address}</h4>
+              <p className="card-phone-lt">{props.transport.phone}</p>
           </Card.Text>
-          <Button className="card-button-website right" variant="primary" href={props.transportz.website}>Website</Button>
+          <Button className="card-button-website-lt" variant="primary" href={props.transport.website}>Website</Button>
+          <Button className="card-button-map-lt" variant="primary" href={props.transport.map}>Routes</Button>
         </Card.Body>
       </Card>
     </div>
@@ -32,30 +34,30 @@ const TransportZ = (props) => {
 }
  
 
-class Transport extends Component{
+class Transports extends Component{
   constructor(props){
     super(props)
     this.state = {
-      transport: [],
+      transports: [],
       loading: true
     }
   }
   componentDidMount(){
-    axios.get(BACKEND_URL + 'transportz/')
+    axios.get(BACKEND_URL + 'transport/')
     .then(response => {
       this.setState({
-        transportz: response.data,
+        transport: response.data,
         loading: false
       })
-      console.log('transportz attractions')
+      console.log('transport attractions')
     })
     .catch((error) => {
       console.log(error)
     });
   }
-  transportzList() {
-    return this.state.transportz.map((currentTran) => {
-      return <TransportZ transportz = {currentTran} key={currentTran._id} />
+  transportList() {
+    return this.state.transport.map((currentTran) => {
+      return <Transport transport = {currentTran} key={currentTran._id} />
     })
   }
     render() {
@@ -69,8 +71,8 @@ class Transport extends Component{
           </div> 
             <div className="container-fluid">
               <div className="row justify-content-center">
-                <div className="" id='TranList'>
-                  {this.transportzList()}
+                <div className="" id='tranList'>
+                  {this.transportList()}
                 </div>
               </div>
             </div>
@@ -86,4 +88,4 @@ class Transport extends Component{
     }    
 }
 
-export default Transport
+export default Transports

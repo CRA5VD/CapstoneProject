@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import bannerPic from '../img/cincy.jpg'
+import bannerPic from '../img/JungleJims.jpg'
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
 import axios from 'axios'
