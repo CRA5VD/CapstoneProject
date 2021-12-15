@@ -18,15 +18,15 @@ class About extends Component {
 
       {/* About */}
 
-        <div className='container'>
-          <div className="row">
+        <div className="container-fluid">
+          <div  id='about-sub' className="row justify-content-evenly w-100">
             <div className="col-sm">
-            <br />
-              <h2>About Us</h2> 
-              <br />
+            
+              <h2>About<br />Us</h2> 
+              <img className="about-main-pics" src={aboutPic} alt="..." />
               
-              <p>________</p>
-              <p>
+             
+              <p className="about-main-buttn center">
                 <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                   Click Me
                 </a>
@@ -34,7 +34,7 @@ class About extends Component {
               </p>
               <div class="collapse" id="collapseExample">
                 <div class="card card-body">
-                <img className="aboutPic" src={aboutPic} alt="..." />
+
 
                   Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
                 </div>
@@ -42,8 +42,11 @@ class About extends Component {
             </div>
             <div className="col-sm">
               <h2>Mission Statement</h2>
-              <p>_________</p>
-              <p>
+              
+              <img className="about-main-pics" src={missionPic} alt="..." />
+              
+             
+              <p className="about-main-buttn center">
                 <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                   Click Me
                 </a>
@@ -51,15 +54,16 @@ class About extends Component {
               </p>
               <div class="collapse" id="collapseExample">
                 <div class="card card-body">
-                <img className="missionPic" src={missionPic} alt="" />
                   Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
                 </div>
               </div>
             </div>
             <div className="col-sm">
               <h2>Meet the Team</h2>
-              <p>_________</p>
-              <p>
+              <img className="about-main-pics" src={teamPic} alt="..." />
+              
+             
+              <p className="about-main-buttn center">
                 <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                   Click Me
                 </a>
@@ -67,7 +71,6 @@ class About extends Component {
               </p>
               <div class="collapse" id="collapseExample">
                 <div class="card card-body">
-                <img className="teamPic" src={teamPic} alt="..." />
                   Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
                 </div>
               </div>

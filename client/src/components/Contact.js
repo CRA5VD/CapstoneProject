@@ -13,8 +13,10 @@ class Contact extends Component {
           <img className="banner-bg w-100" src={bannerPic} alt="Logo" />
         </div>
       </div>
-      
-
+      <br />
+      <div className="justify-content-center">
+        <h1>Contact Us</h1>
+      </div>
 
 
       <div className="container contact-form">

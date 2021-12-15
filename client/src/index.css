@@ -535,6 +535,27 @@ img.card-img-top{
   margin-top: 100px;
 }
 
+.about-main-pics{
+  width: 250px !important;
+  height: 250px !important;
+  border-radius: 50%;
+ 
+}
+div.col-sm{
+  margin-left: 3px;
+  margin-right: 3px;
+  max-width: 260px !important;
+  height: auto;
+}
+.about-main-buttn{
+  margin-top: 15px;
+}
+
+#about-sub{
+  justify-content: center;
+  margin: auto;
+}
+
 
 /* -------- Main Footer -------- */
 
