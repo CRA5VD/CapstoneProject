@@ -73,10 +73,9 @@ class FoodDrinks extends Component{
             </div>
           </div>
         ) : (
-          <div className="loading-page">
-            <div className="loading-page-sub">
-              <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
-              <h1>Loading...</h1>
+          <div className="loading-page container-fluid">
+            <div className="loading-page-sub row w-100">
+              <h1 className='loading-text'>Loading...</h1>
             </div>
           </div>
         )

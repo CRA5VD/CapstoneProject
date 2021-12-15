@@ -27,16 +27,18 @@ const Footer = () => {
               <div className="col-1 footer-links-contain1 left">
                 <ul className="footer-links-ul">
                   <li><Link className="footer-main-links" to="/">Home</Link></li>
-                  <li><Link className="footer-main-links" to="/Contact">Contact</Link></li>
-                  <li><Link className="footer-main-links" to="/About">About</Link></li>
+                  <li><Link className="footer-main-links" to="/contact">Contact</Link></li>
+                  <li><Link className="footer-main-links" to="/about">About</Link></li>
                 </ul>
               </div>
               <div className="col-3 footer-links-contain2">
                 <ul className="footer-links-ul">
-                  <li><Link className="footer-main-links" to="/Events">Events</Link></li>
-                  <li><Link className="footer-main-links" to="/FoodDrinks">Food & Drinks</Link></li>
-                  <li><Link className="footer-main-links" to="/Entertainment">Entertainment</Link></li>
-                  <li><Link className="footer-main-links" to="/LodgAndTran">Lodging & Transportation</Link></li>
+
+                  <li><Link className="footer-main-links" to="/fooddrink">Food & Drinks</Link></li>
+                  <li><Link className="footer-main-links" to="/entertainmentsports">Entertainment</Link></li>
+                  <li><Link className="footer-main-links" to="/artsmusic">Arts & Music</Link></li>
+                  <li><Link className="footer-main-links" to="/lodging">Lodging</Link></li>
+                  <li><Link className="footer-main-links" to="/transport">Transportation</Link></li>
                 </ul>
               </div>
             </div>

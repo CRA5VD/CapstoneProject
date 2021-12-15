@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import Cincinnati4kDrone from '../img/Cincinnati4KDrone.mp4'
+import awardsPic from '../img/cityawards.png'
 import HomeMapCinci from '../img/AllNeighborhoodsCincinati.png'
 import Collage from './Collage';
+
 
 
 class Home extends Component{
@@ -16,6 +18,13 @@ class Home extends Component{
           </div>
         </div>
         
+        {/* Awards */} 
+        <div className="awards-contain container-fluid">
+          <div className="row justified-content-center">
+            <img className="awards-img" src={awardsPic} alt="Logo" /> 
+          </div>
+        </div>
+
         {/* Photo Collage */}
 
             <Collage/>
