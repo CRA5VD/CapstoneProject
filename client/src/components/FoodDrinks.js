@@ -73,9 +73,11 @@ class FoodDrinks extends Component{
             </div>
           </div>
         ) : (
-          <div className="">
-            <h1>Loading...</h1>
-          
+          <div className="loading-page">
+            <div className="loading-page-sub">
+              <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+              <h1>Loading...</h1>
+            </div>
           </div>
         )
     

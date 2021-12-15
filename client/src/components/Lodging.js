@@ -35,7 +35,7 @@ class Lodgings extends Component{
   constructor(props){
     super(props)
     this.state = {
-      lodgings: [],
+      lodging: [],
       loading: true
     }
   }
@@ -75,9 +75,11 @@ class Lodgings extends Component{
             </div>
           </div>
         ) : (
-          <div className="">
-            <h1>Loading...</h1>
-          
+          <div className="loading-page">
+            <div className="loading-page-sub">
+              <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+              <h1>Loading...</h1>
+            </div>
           </div>
         )
     
