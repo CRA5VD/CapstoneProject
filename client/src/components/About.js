@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import bannerPic from '../img/cinciparks.jpg'
-import aboutPic from '../img/about.png'
-import missionPic from '../img/teamBuilding.png'
-import teamPic from '../img/team.jpg'
+import bannerPic from '../img/cinciparks.jpg';
+import aboutPic from '../img/about.png';
+import missionPic from '../img/teamBuilding.png';
+import teamPic from '../img/team.jpg';
 
 
 
