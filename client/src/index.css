@@ -16,7 +16,10 @@ code {
 
 .nav-links:hover{
   background-color: transparent !important;
-  
+}
+
+Link{
+  background-color: transparent !important;
 }
 
 .home .post img{
@@ -163,7 +166,7 @@ code {
 .video-container{
   position: relative;
   top: 0;
-  height:450px !important;
+  min-height:590px !important;
   padding: 0 !important;
   margin: 0 !important;
   margin-bottom: 50px !important;
@@ -183,6 +186,27 @@ code {
 #video-bg{
   width:100%;
 }
+
+
+/* -------- Page Loading -------- */
+
+h1{
+  font-size: 35px!important;
+  text-align: center;
+}
+.loading-page-contain{
+  position: relative;
+}
+.loading-page-sub{
+  position: absolute;
+  top: 300px !important;
+  justify-content: center;
+  text-align: center;
+}
+.loading-text{
+  margin: auto;
+}
+
 
 
 /* -------- Banner -------- */
@@ -287,8 +311,8 @@ button.css-1h82jk3.css-1ycyyax{
 .card-main{
   width: 480px !important;
   height: 700px !important;
-  margin-right: 20px !important;
-  margin-left: 20px !important;
+  margin-right: 30px !important;
+  margin-left: 30px !important;
 }
 .card-img{
  width: 425px !important;
@@ -435,6 +459,21 @@ img.card-img-top{
 }
 .card-body-t{
   width: 500px;
+}
+
+
+/* -------- Home -------- */
+
+
+.awards-contain{
+  margin-top: 30px;
+  margin-bottom: 150px;
+}
+
+.awards-img{
+ width: 85% ;
+ height: auto;
+ margin: auto;
 }
 
 

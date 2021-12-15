@@ -19,7 +19,7 @@ const EntertainmentSport = (props) => {
               <h4 className="card-address">{props.entertainmentsports.address}</h4>
               <p className="card-description">{props.entertainmentsports.description}</p>
           </Card.Text>
-          <Button className="card-button-website right" variant="primary" href={props.entertainmentsports.website}>Website</Button>
+          <Button className="card-button-website right" variant="primary" target="_blank" rel="noreferrer noopener" href={props.entertainmentsports.website}>Website</Button>
         </Card.Body>
       </Card>
     </div>
@@ -71,9 +71,10 @@ const EntertainmentSport = (props) => {
                 </div>
               </div>
             ) : (
-              <div className="">
-                <h1>Loading...</h1>
-              
+              <div className="loading-page container-fluid">
+                <div className="loading-page-sub row w-100">
+                  <h1 className='loading-text'>Loading...</h1>
+                </div>
               </div>
             )
         
