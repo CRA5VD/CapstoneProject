@@ -20,7 +20,7 @@ const Lodging = (props) => {
               <h4 className="card-address-l">{props.lodging.address}</h4>
               <p className="card-description-l">{props.lodging.description}</p>
           </Card.Text>
-          <Button className="card-button-website-l" variant="primary" href={props.lodging.website}>Website</Button>
+          <Button className="card-button-website-l" variant="primary" target="_blank" rel="noreferrer noopener" href={props.lodging.website}>Website</Button>
       </Card.Body>
           <Card.Img className="card-img-l" variant="top" src={props.lodging.imageURL} />
       </Card>
@@ -75,10 +75,9 @@ class Lodgings extends Component{
             </div>
           </div>
         ) : (
-          <div className="loading-page">
-            <div className="loading-page-sub">
-              <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
-              <h1>Loading...</h1>
+          <div className="loading-page container-fluid">
+            <div className="loading-page-sub row w-100">
+              <h1 className='loading-text'>Loading...</h1>
             </div>
           </div>
         )

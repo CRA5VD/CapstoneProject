@@ -16,7 +16,10 @@ code {
 
 .nav-links:hover{
   background-color: transparent !important;
-  
+}
+
+Link{
+  background-color: transparent !important;
 }
 
 .home .post img{
@@ -163,7 +166,7 @@ code {
 .video-container{
   position: relative;
   top: 0;
-  height:450px !important;
+  min-height:590px !important;
   padding: 0 !important;
   margin: 0 !important;
   margin-bottom: 50px !important;
@@ -464,7 +467,7 @@ img.card-img-top{
 
 .awards-contain{
   margin-top: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 150px;
 }
 
 .awards-img{

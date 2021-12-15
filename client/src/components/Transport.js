@@ -22,8 +22,8 @@ const Transport = (props) => {
               <h4 className="card-address-t">{props.transport.address}</h4>
               <p className="card-phone-t">{props.transport.phone}</p>
           </Card.Text>
-          <Button className="card-button-website-t right" variant="primary" href={props.transport.website}>Website</Button>
-          <Button className="card-button-map-t right" variant="primary" href={props.transport.map}>Routes</Button>
+          <Button className="card-button-website-t right" variant="primary" target="_blank" rel="noreferrer noopener" href={props.transport.website}>Website</Button>
+          <Button className="card-button-map-t right" variant="primary" target="_blank" rel="noreferrer noopener" href={props.transport.map}>Routes</Button>
         </Card.Body>
       </Card>
     </div>
@@ -77,9 +77,10 @@ class Transports extends Component{
             </div>
           </div>
         ) : (
-          <div className="">
-            <h1>Loading...</h1>
-          
+          <div className="loading-page container-fluid">
+            <div className="loading-page-sub row w-100">
+              <h1 className='loading-text'>Loading...</h1>
+            </div>
           </div>
         )
     

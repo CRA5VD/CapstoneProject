@@ -20,7 +20,8 @@ const ArtsMusic = (props) => {
               <h4 className="card-address">{props.artsmusic.address}</h4>
               <p className="card-description">{props.artsmusic.description}</p>
           </Card.Text>
-          <Button className="card-button-website right" variant="primary" href={props.artsmusic.website}>Website</Button>
+          <Button className="card-button-website right" variant="primary" target="_blank" rel="noreferrer noopener"
+          href={props.artsmusic.website}>Website</Button>
         </Card.Body>
       </Card>
     </div>
@@ -74,9 +75,10 @@ class ArtsMusics extends Component{
             </div>
           </div>
         ) : (
-          <div className="">
-            <h1>Loading...</h1>
-          
+          <div className="loading-page container-fluid">
+            <div className="loading-page-sub row w-100">
+              <h1 className='loading-text'>Loading...</h1>
+            </div>
           </div>
         )
     
